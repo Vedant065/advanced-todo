@@ -7,5 +7,9 @@ def view_tasks():
     for t in tasks:
         print(t)
 
+def delete_task(index):
+    if index < len(tasks):
+        tasks.pop(index)
+        
 add_task("Learn Git")
 view_tasks()
