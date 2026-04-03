@@ -19,3 +19,4 @@ def save_tasks():
 add_task("Learn Git")
 view_tasks()
 print("Save feature")
+print("Delete feature")
