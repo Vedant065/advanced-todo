@@ -10,7 +10,6 @@ def view_tasks():
 def delete_task(index):
     if index < len(tasks):
         tasks.pop(index)
-
 def save_tasks():
     with open("tasks.txt", "w") as f:
         for t in tasks:
