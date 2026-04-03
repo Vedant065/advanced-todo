@@ -13,3 +13,4 @@ def delete_task(index):
         
 add_task("Learn Git")
 view_tasks()
+print("Delete feature")
