@@ -1,0 +1,22 @@
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+
+def view_tasks():
+    for t in tasks:
+        print(t)
+
+def delete_task(index):
+    if index < len(tasks):
+        tasks.pop(index)
+
+def save_tasks():
+    with open("tasks.txt", "w") as f:
+        for t in tasks:
+            f.write(t + "\n")
+
+add_task("Learn Git")
+view_tasks()
+print("Save feature")
+print("Delete feature")
